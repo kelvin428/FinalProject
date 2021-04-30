@@ -33,7 +33,7 @@
 
 <div id="error"></div>
 <div id="body">
-    <form id="form" action="comfirm.html">
+    <form id="form" action="index.html">
     <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname" required><br>
         <label for="lname">Last name:</label><br>
@@ -100,7 +100,7 @@
         localStorage.setItem("PHONE",phone)
         localStorage.setItem("ADDRESS",address);
         localStorage.setItem("SERVICE",serviceselected);
-        storagedata();
+        window.alert('Booked! Thank you!')
         return false;
     }
 
