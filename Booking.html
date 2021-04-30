@@ -63,7 +63,7 @@
 <div id="footer">
     <div class="section">
         <h1>Contact US</h1>
-        <p>Sign up here to receive the latest updates, news and information from District Dogs!</p>
+        <p>Sign up here to receive the latest updates, news and information from K&M Pet Service!</p>
         <form action="">
             <label for="Email">Email:</label><br>
             <input type="text" id="youremail" name="email"><br>
@@ -87,18 +87,20 @@
 
     function handleSubmit(){
         var serviceselected;
-        var fname = document.getElementById('fname').value;
-        var lname = document.getElementById('lname').value;
-        var email = document.getElementById('email').value;
-        var phone = document.getElementById('phone').value;
-        var address = document.getElementById('address').value;
-        serviceselected=getCheckboxValue();
+        const fname = document.getElementById('fname').value;
+        const lname = document.getElementById('lname').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const address = document.getElementById('address').value;
+        serviceselected=getCheckboxValue().toString();
+        console.log(fname)
         localStorage.setItem("FNAME",fname);
         localStorage.setItem("LNAME",lname);
         localStorage.setItem("EMAIL",email);
         localStorage.setItem("PHONE",phone)
         localStorage.setItem("ADDRESS",address);
         localStorage.setItem("SERVICE",serviceselected);
+        storagedata();
         return false;
     }
 
@@ -106,29 +108,28 @@
 
         var res=" ";
         if (l1.checked == true){
-            var pl1 = document.getElementById("check1").value;
+            var pl1 = document.getElementById("petdaycare").value;
             res = pl1 + ",";
         }
         else if (l2.checked == true){
-            var pl2 = document.getElementById("check2").value;
-            resres = res + pl2 + ",";
+            var pl2 = document.getElementById("petboarding").value;
+            res = res + pl2 + ",";
         }
         else if (l3.checked == true){
-            document.write(res);
-            var pl3 = document.getElementById("check3").value;
-            resres = res + pl3 + ",";
+            var pl3 = document.getElementById("petspa").value;
+            res = res + pl3 + ",";
         }
         else if (l4.checked == true){
-            var pl4 = document.getElementById("check4").value;
-            resres = res + pl4 + ",";
+            var pl4 = document.getElementById("in-homeservices").value;
+            res = res + pl4 + ",";
         }
         else if (l5.checked == true){
-            var pl5 = document.getElementById("check5").value;
-            resres = res + pl5 + ",";
+            var pl5 = document.getElementById("playparkrental").value;
+            res = res + pl5 + ",";
         }
         else if (l6.checked == true){
-            var pl6 = document.getElementById("check6").value;
-            resres = res + pl6;
+            var pl6 = document.getElementById("petlaundry").value;
+            res = res + pl6;
         } else {
             return message.push("You have not selected anything");
         }

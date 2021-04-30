@@ -9,7 +9,7 @@
 <div class="topnav" id="myTopnav">
     <a href="index.html" id="logo"><img src="images/brandname.png" width="310" height="100" alt=""></a>
     <a href="contact.html">Contact Us</a>
-    <a href="about.html"  >About</a>
+    <a href="about.html">About</a>
     <a href="blog.html">Blog</a>
     <div class="dropdown">
         <button class="servicedropbtn">Service
@@ -42,26 +42,30 @@
 <div id="footer">
     <div class="section">
         <h1>Contact US</h1>
-        <p>Sign up here to receive the latest updates, news and information from District Dogs!</p>
+        <p>Sign up here to receive the latest updates, news and information from K&M Pet Service!</p>
         <form action="">
             <label for="Email">Email:</label><br>
             <input type="text" id="youremail" name="email"><br>
-            <input onclick="Received()" type="submit" value="Submit"style="background-color: lightblue">
+            <input onclick="Received()" type="submit" value="Submit" style="background-color: lightblue">
         </form>
     </div>
     <div id="footnote">
         <div class="section">Copyright &copy; 2021 K&M Pet Service All rights reserved</div>
     </div>
 </div>
-</body>
 <script>
-    function Received(){
+    function Received() {
         window.alert("We will contact you as soon as possible!");
     }
+
     document.getElementById('fname').innerHTML = localStorage.getItem("FNAME");
-    document.getElementById('lname').innerHTML = localStorage.getItem("LNAME");
+    document.getElementById('lastname').innerHTML = localStorage.getItem("LNAME");
     document.getElementById('email').innerHTML = localStorage.getItem("EMAIL");
     document.getElementById('phone').innerHTML = localStorage.getItem("PHONE");
     document.getElementById('address').innerHTML = localStorage.getItem("ADDRESS");
+
+
 </script>
+</body>
+
 </html>
