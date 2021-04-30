@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Page</title>
+    <link href="css/user.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" id="logo"><img src="images/brandname.png" width="310" height="100" alt=""></a>
+    <a href="contact.html">Contact Us</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+        <button class="servicedropbtn" class="active">Service
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="petdaycare.html">Pet Daycare</a>
+            <a href="petboarding.html">Pet Boarding</a>
+            <a href="petspa.html">Pet Spa</a>
+            <a href="in-homeservices.html">In-Home Services</a>
+            <a href="playparkrental.html">Playpark Rental</a>
+            <a href="petlaundry.html">Pet Laundry</a>
+        </div>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+</body>
+<script>
+    function Received(){
+        window.alert("We will contact you as soon as possible!");
+    }
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</html>

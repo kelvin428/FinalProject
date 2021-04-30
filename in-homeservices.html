@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In-Home Services</title>
+    <link href="css/servicestyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" id="logo"><img src="images/brandname.png" width="310" height="100" alt=""></a>
+    <a href="contact.html">Contact Us</a>
+    <a href="about.html" class="active" >About</a>
+    <a href="blog.html">Blog</a>
+    <div class="dropdown">
+        <button class="servicedropbtn">Service
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="petdaycare.html">Pet Daycare</a>
+            <a href="petboarding.html">Pet Boarding</a>
+            <a href="petspa.html">Pet Spa</a>
+            <a href="in-homeservices.html">In-Home Services</a>
+            <a href="playparkrental.html">Playpark Rental</a>
+            <a href="petlaundry.html">Pet Laundry</a>
+        </div>
+    </div>
+    <a href="petmart.html">Pet Mart</a>
+    <a href="index.html">Home</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div id="body">
+    <h1>In-Home Services</h1>
+    <ul>
+        <li>
+            <h2>
+                Pet Walking
+            </h2>
+            <p>
+                K&M Pet Service pet walking service provides small group walks with friendly, neighborhood pups. Rather than large packs, our walks are usually composed of two or three pets who live near each other. Our emphasis on providing a small group setting ensures your pet gets a fun social experience, with plenty of time to stop and do their business!            </p>
+        </li>
+        <li>
+            <h2>
+                Pet Play
+            </h2>
+            <p>
+                Taking care of a pet is hard work! K&M Pet Service offers individual pet Play visits for pets who are too young to go on outdoor group walks. During these 20-minute visits, one of our professional walkers will spend one-on-one time with your pet, providing the exercise and engagement young pets require. We’ll make sure your new family member gets a bathroom break, fresh food and water if necessary, time to play, and plenty of attention.            </p>
+        </li>
+        <li>
+            <h2>Pet Sitting</h2>
+            <p>
+                Our overnight pet sitting service provides your pet with the attention and care they need while you’re away, with all the comforts of their own home. Whether your pet has special requirements that make group boarding a strain or simply prefers a familiar environment, our in-home pet sitting service makes your absence a bit more tolerable by allowing your pet the peace of mind that comes with their day-to-day home life. After all, who doesn’t prefer sleeping in their own bed?
+            </p>
+        </li>
+        <li>
+            <h2>
+                Enrolling for K&M Pet Service In-Home Services
+            </h2>
+            <p>
+                Setting up pet walking, pet visit, or pet sitting services begins by contacting our pet walking and pet sitting general manager. We require this initial step to verify that your address is within our coverage area and that we have walker and/or sitter availability at the time you request service.
+
+            </p>
+
+        </li>
+    </ul>
+    <h1>Find your nearest K&M Pet Service and Register Today!</h1>
+    <form action="Booking.html">
+        <input  id="book" type="submit" value="Click Here" />
+    </form>
+</div>
+<div id="footer">
+    <div class="section">
+        <h1>Contact US</h1>
+        <p>Sign up here to receive the latest updates, news and information from District pets!</p>
+        <form action="">
+            <label for="Email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <input onclick="Received()" type="submit" value="Submit"style="background-color: lightblue">
+        </form>
+    </div>
+    <div id="footnote">
+        <div class="section">Copyright &copy; 2021 K&M Pet Service All rights reserved</div>
+    </div>
+</div>
+
+</body>
+<script>
+    function Received(){
+        window.alert("We will contact you as soon as possible!");
+    }
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</html>

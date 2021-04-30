@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Daycare</title>
+    <link href="css/servicestyle.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" id="logo"><img src="images/brandname.png" width="310" height="100" alt=""></a>
+    <a href="contact.html">Contact Us</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <div class="dropdown">
+        <button class="servicedropbtn" class="active">Service
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="petdaycare.html">Pet Daycare</a>
+            <a href="petboarding.html">Pet Boarding</a>
+            <a href="petspa.html">Pet Spa</a>
+            <a href="in-homeservices.html">In-Home Services</a>
+            <a href="playparkrental.html">Playpark Rental</a>
+            <a href="petlaundry.html">Pet Laundry</a>
+        </div>
+    </div>
+    <a href="petmart.html">Pet Mart</a>
+    <a href="index.html">Home</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div id="body">
+    <h1>Pet Daycare</h1>
+    <ul>
+        <li>
+            <h2>
+                Professional Care, Engaging Playtime
+            </h2>
+            <p>
+                K&M Pet Service provides an enjoyable, fun, and safe experience for your pet. All of our pet daycare locations offer 24/7 supervision by a team of trained attendants. Our daycare staff is committed to providing a fun and healthy atmosphere for your pup to enjoy structured play and exercise—with plenty of time for cooldowns and rest! Our playrooms are equipped with play structures to keep your pup entertained for hours. Protect-All Flooring offers premium underfoot comfort that is soft on joints with superior traction to keep playtime safe and fun. Kuranda® beds and fleece blankets keep your pet cozy when naptime calls.
+            </p>
+        </li>
+        <li>
+            <h2>
+                Safety First
+            </h2>
+            <p>
+                Our daycare spaces are designed with your pet’s safety in mind. From the moment your pet enters one of our facilities, they are in a fully supervised environment. Staff members facilitate socialization and playtime, while enforcing basic training and good manners.
+            </p>
+        </li>
+        <li>
+            <h2>Good, Clean Fun</h2>
+            <p>From the floor to the ceiling, our daycare locations are designed to provide a healthy environment for your pets. We utilize state-of-the art ventilation systems for a constant supply of fresh air and all play areas are cleaned throughout the day.</p>
+        </li>
+        <li>
+            <h2>
+                Don't Miss Out on the Action
+            </h2>
+            <p>
+                Our pet daycare facilities are equipped with live HD webcams, offering you a chance to check up on your pup throughout the day. Additionally, each pet receives a daily digital report card, keeping you up-to-date on your pup’s experience and the new friends they make during their stay.
+            </p>
+
+        </li>
+    </ul>
+    <h1>Find your nearest K&M Pet Service and Register Today!</h1>
+    <form action="Booking.html">
+        <input  id="book" type="submit" value="Click Here" />
+    </form>
+</div>
+<div id="footer">
+    <div class="section">
+        <h1>Contact US</h1>
+        <p>Sign up here to receive the latest updates, news and information from K&M Pet Service!</p>
+        <form action="">
+            <label for="Email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <input onclick="Received()" type="submit" value="Submit"style="background-color: lightblue">
+        </form>
+    </div>
+    <div id="footnote">
+        <div class="section">Copyright &copy; 2021 K&M Pet Service All rights reserved</div>
+    </div>
+</div>
+</body>
+<script>
+    function Received(){
+        window.alert("We will contact you as soon as possible!");
+    }
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</html>

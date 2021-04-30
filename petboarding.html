@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Boarding</title>
+    <link href="css/servicestyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" id="logo"><img src="images/brandname.png" width="310" height="100" alt=""></a>
+    <a href="contact.html">Contact Us</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <div class="dropdown">
+        <button class="servicedropbtn" class="active">Service
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="petdaycare.html">Pet Daycare</a>
+            <a href="petboarding.html">Pet Boarding</a>
+            <a href="petspa.html">Pet Spa</a>
+            <a href="in-homeservices.html">In-Home Services</a>
+            <a href="playparkrental.html">Playpark Rental</a>
+            <a href="petlaundry.html">Pet Laundry</a>
+        </div>
+    </div>
+    <a href="petmart.html">Pet Mart</a>
+    <a href="index.html">Home</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div id="body">
+    <h1>Pet Boarding</h1>
+    <ul>
+        <li>
+            <h2>
+                A Safe Place to Play
+            </h2>
+            <p>
+                K&M Pet Service ensures your peace of mind with 24/7 supervision for your pup while you’re away. Our
+                professional attendants are on-site day and night, making sure each pet in our care enjoys a healthy and
+                safe experience. Daily digital report cards keep you up-to-date on how your furry pal is doing, and you
+                can be a part of your pet’s stay using our live HD webcams. </p>
+        </li>
+        <li>
+            <h2>
+                Professional Care You Can Count On
+            </h2>
+            <p>
+                Whether your pet requires a special diet or medication, our team is here to help. K&M Pet Service’s
+                trained attendants facilitate socialization and play for your pet, while providing the kind of structure
+                your pet needs when away from home. We make sure to set aside plenty of time for rest, meals, and
+                cooldowns throughout your pet’s stay. </p>
+        </li>
+        <li>
+            <h2>Bring Home a Happy, Clean Pup</h2>
+            <p>Our on-site grooming and bathing areas allow you to add a bath or grooming session to the end of your
+                pet’s stay with us. After days of romping and fun, we’ll make sure your pup gets a soothing spa session.
+                What better way to come home than with memories of playtime and a fresh, new ‘do?</p>
+        </li>
+        <li>
+            <h2>
+                What to Know Before You Board
+            </h2>
+            <p>
+                pets can be dropped off and picked up for boarding between the hours of 7am — 9pm on weekdays or 9am —
+                7pm on weekends. We provide beds, blankets, and toys for your pet’s stay with us. All you need to bring
+                is your pup! If you are bringing food from home for your pet, please have it in a clearly labeled
+                container, with enough portions for their entire stay. Any medications we need to administer should be
+                brought in their original containers or packaging; do not mix them into your pet’s food. If you and your
+                pet are new to K&M Pet Service, we recommend a few days of daycare in advance of a boarding stay. This
+                gives your pet a chance to become comfortable and familiar with the environment at K&M Pet Service and
+                lets us get to know your pup. </p>
+
+        </li>
+    </ul>
+    <h1>Find your nearest K&M Pet Service and Register Today!</h1>
+    <form action="Booking.html">
+        <input id="book" type="submit" value="Click Here"/>
+    </form>
+</div>
+<div id="footer">
+    <div class="section">
+        <h1>Contact US</h1>
+        <p>Sign up here to receive the latest updates, news and information from K&M Pet Service!</p>
+        <form action="">
+            <label for="Email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <input onclick="Received()" type="submit" value="Submit" style="background-color: lightblue">
+        </form>
+    </div>
+    <div id="footnote">
+        <div class="section">Copyright &copy; 2021 K&M Pet Service All rights reserved</div>
+    </div>
+</div>
+</body>
+<script>
+    function Received() {
+        window.alert("We will contact you as soon as possible!");
+    }
+
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</html>

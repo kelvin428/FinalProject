@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Spa</title>
+    <link href="css/servicestyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" id="logo"><img src="images/brandname.png" width="310" height="100" alt=""></a>
+    <a href="contact.html">Contact Us</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <div class="dropdown">
+        <button class="servicedropbtn" class="active">Service
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="petdaycare.html">Pet Daycare</a>
+            <a href="petboarding.html">Pet Boarding</a>
+            <a href="petspa.html">Pet Spa</a>
+            <a href="in-homeservices.html">In-Home Services</a>
+            <a href="playparkrental.html">Playpark Rental</a>
+            <a href="petlaundry.html">Pet Laundry</a>
+        </div>
+    </div>
+    <a href="petmart.html">Pet Mart</a>
+    <a href="index.html">Home</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div id="body">
+    <h1>Pet Spa</h1>
+    <ul>
+        <li>
+            <h2>
+                Boutique Grooming, Friendly service
+            </h2>
+            <p>
+                The Pet Spa by K&M Pet Service provides a variety of luxury treatments to help your pup feel their best! From bath and brush service to a full cut and style experience, our professional groomers are here to pamper your pet.
+            </p>
+        </li>
+        <li>
+            <h2>
+                Bath and Brush Service
+            </h2>
+            <p>
+                Want a clean pet without the stress and struggle of bath time at home? We’re here to help. Our professional team will make sure your pet gets the deep clean their coat needs, all while keeping them calm, comfortable, and safe. No more chasing a wet pet around the house!            </p>
+        </li>
+        <li>
+            <h2>Cut and Style Service</h2>
+            <p>
+                Whether your pet needs a trim or a whole new look, let K&M Pet Service give them the special experience they deserve. Our professional groomers start each cut and style experience with a moisturizing massage and bath before cutting, drying, and styling your pet’s coat. We also perform gentle ear cleaning, gland expression, and nail trimming and grinding. Each visit ends with a K&M Pet Service bandana or bow—your pet will strut down the sidewalk in style!
+            </p>
+        </li>
+        <li>
+            <h2>
+                Enjoy the Convenience of Online Booking
+            </h2>
+            <p>
+                Book your pet’s spa day using our easy-to-use digital booking system; one login provides access to services at any of our locations.
+            </p>
+
+        </li>
+    </ul>
+    <h1>Find your nearest K&M Pet Service and Register Today!</h1>
+    <form action="Booking.html">
+        <input  id="book" type="submit" value="Click Here" />
+    </form>
+</div>
+<div id="footer">
+    <div class="section">
+        <h1>Contact US</h1>
+        <p>Sign up here to receive the latest updates, news and information from K&M Pet Service!</p>
+        <form action="">
+            <label for="Email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <input onclick="Received()" type="submit" value="Submit"style="background-color: lightblue">
+        </form>
+    </div>
+    <div id="footnote">
+        <div class="section">Copyright &copy; 2021 K&M Pet Service All rights reserved</div>
+    </div>
+</div>
+</body>
+<script>
+    function Received(){
+        window.alert("We will contact you as soon as possible!");
+    }
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</html>

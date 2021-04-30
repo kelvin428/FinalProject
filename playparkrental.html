@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Playpark Rental</title>
+    <link href="css/servicestyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" id="logo"><img src="images/brandname.png" width="310" height="100" alt=""></a>
+    <a href="contact.html">Contact Us</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <div class="dropdown">
+        <button class="servicedropbtn" class="active">Service
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="petdaycare.html">Pet Daycare</a>
+            <a href="petboarding.html">Pet Boarding</a>
+            <a href="petspa.html">Pet Spa</a>
+            <a href="in-homeservices.html">In-Home Services</a>
+            <a href="playparkrental.html">Playpark Rental</a>
+            <a href="petlaundry.html">Pet Laundry</a>
+        </div>
+    </div>
+    <a href="petmart.html">Pet Mart</a>
+    <a href="index.html">Home</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div id="body">
+    <h1>Playpark Rental</h1>
+    <ul>
+        <li>
+            <h2>
+                Every Pet Deserves Their Day
+            </h2>
+            <p>
+                Celebrate your pup’s birthday, gotcha day, or other milestone by renting one of our playrooms for a private pet party! Whether you have a specific occasion in mind or simply want to allow your pet and their friends to romp and play in a clean and fun environment, let us plan the perfect day for you.
+            </p>
+        </li>
+        <li>
+            <h2>
+                The Pawfect Place for Play
+            </h2>
+            <p>
+                Booking a private playroom at K&M Pet Service  provides the ultimate play date for your pet and their friends. To make playtime engaging and exciting, we’ve got a variety of FUNiture play structures to keep pets entertained and engaged for hours of play in air-conditioned comfort. Each of our playrooms features Protect-All Flooring for premium underfoot comfort that is soft on joints with superior traction to keep playtime safe and fun        </li>
+        <li>
+            <h2>What’s Included in Playpark Rental</h2>
+            <p>
+                Choose one of our two distinct packages to create the ideal experience for your pup’s special day.
+            </p>
+            <ul>
+                <h2>
+                    Standard Playpark Rental
+                </h2>
+                <li>
+                    K&M Pet Service professional attendant on hand to assist with crowd control and clean up.
+                </li>
+                <li>Designated play area for two hours of play;</li>
+                <h2>
+                    Woof It Up Rental
+                </h2>
+                <li>A custom cake;</li>
+                <li>Event decorations and props;</li>
+                <li>Treat-filled bags for each attendee;</li>
+                <li>Instagram post by K&M Pet Service;</li>
+                <li>All attendees receive 10% off our curated retail selection for the day.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>
+                Enrolling for K&M Pet Service In-Home Services
+            </h2>
+            <p>
+                Setting up pet walking, pet visit, or pet sitting services begins by contacting our pet walking and pet sitting general manager. We require this initial step to verify that your address is within our coverage area and that we have walker and/or sitter availability at the time you request service.
+
+            </p>
+
+        </li>
+    </ul>
+    <h1>Find your nearest K&M Pet Service and Register Today!</h1>
+    <form action="Booking.html">
+        <input  id="book" type="submit" value="Click Here" />
+    </form>
+</div>
+<div id="footer">
+    <div class="section">
+        <h1>Contact US</h1>
+        <p>Sign up here to receive the latest updates, news and information from K&M Pet Service!</p>
+        <form action="">
+            <label for="Email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <input onclick="Received()" type="submit" value="Submit"style="background-color: lightblue">
+        </form>
+    </div>
+    <div id="footnote">
+        <div class="section">Copyright &copy; 2021 K&M Pet Service All rights reserved</div>
+    </div>
+</div>
+
+</body>
+<script>
+    function Received(){
+        window.alert("We will contact you as soon as possible!");
+    }
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</html>

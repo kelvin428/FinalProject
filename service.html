@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Services</title>
+    <link href="css/Services.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html" id="logo"><img src="images/brandname.png" width="310" height="100" alt=""></a>
+    <a href="contact.html">Contact Us</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <div class="dropdown">
+        <button class="servicedropbtn" class="active">Service
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="petdaycare.html">Pet Daycare</a>
+            <a href="petboarding.html">Pet Boarding</a>
+            <a href="petspa.html">Pet Spa</a>
+            <a href="in-homeservices.html">In-Home Services</a>
+            <a href="playparkrental.html">Playpark Rental</a>
+            <a href="petlaundry.html">Pet Laundry</a>
+        </div>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div id="body">
+    <h1>Services</h1>
+    <p>We serve pets of every type, age, and phase of life because we truly love animals. We show it with every belly
+        rub, long walk, scratch behind the ear, and treat we give. We’d love to be your trusted sidekick for a healthy
+        and happy pet because we know we can deliver quality care and an incredible, stress-free experience for you.
+    </p>
+    <div class="services-group">
+        <button href="#">Pet Daycare</button>
+        <button href="#">Pet Boarding</button>
+        <button href="#">Pet Spa</button>
+        <button href="#">In-Home Services</button>
+        <button href="#">Playpark Rental</button>
+        <button href="#">Pet Laundry</button>
+    </div>
+</div>
+
+
+<div id="footer">
+    <div class="section">
+        <h1>Contact US</h1>
+        <p>Sign up here to receive the latest updates, news and information from District Dogs!</p>
+        <form action="">
+            <label for="Email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <input onclick="Received()" type="submit" value="Submit"style="background-color: lightblue">
+        </form>
+    </div>
+    <div id="footnote">
+        <div class="section">Copyright &copy; 2021 K&M Pet Service All rights reserved</div>
+    </div>
+</div>
+<script>
+    function Received(){
+        window.alert("We will contact you as soon as possible!");
+    }
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (e) {
+        if (!e.target.matches('.servicedropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+            }
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,925 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../images/bg-body.gif");
+    background-repeat: repeat-x;
+}
+
+#page {
+}
+
+#header {
+    width: 960px;
+    height: 72px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#header a#logo {
+    position: relative;
+    z-index: 100;
+}
+
+#header a#logo img {
+    border: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #FFAD00;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.active{
+    background-color: #ff9900;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:first-child {
+    float: left;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    color: white;
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .servicedropbtn {
+    overflow: hidden;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFAD00;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #FFAD00;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .servicedropbtn {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .servicedropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/**------------- Start of body style ----------------**/
+
+#body div.banner {
+    background: url("../images/Slogan.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 722px;
+}
+
+#body div#content {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: none;
+    height: auto;
+    overflow: hidden;
+}
+
+#body div#content .content {
+    float: left;
+    width: 640px;
+    margin-right: 20px;
+    background-image: none;
+    height: auto;
+    overflow: hidden;
+}
+
+#body #content .content h2 {
+    font-family: "Myriad Pro";
+    margin: 80px 0 0 30px;
+}
+
+#body #content .content ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#body #content .content ul li {
+    width: 300px;
+    padding: 0 10px;
+    margin: 0 0 20px 0;
+    float: left;
+    line-height: 25px;
+    height: auto;
+}
+
+#body #content .content ul li span {
+    display: block;
+}
+
+#body #content .content ul li span a {
+    color: #7F7154;
+    font-family: "Myriad Pro";
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#body #content .content ul li span a:hover {
+    color: #000000;
+}
+
+#body #content .content ul li span a.more {
+    text-decoration: none;
+    color: #FFAD00;
+}
+
+#body #content .content ul li span a.more:hover {
+    text-decoration: none;
+    color: #ff6600;
+}
+
+#body #content .content ul li a {
+    text-decoration: none;
+}
+
+#body #content .content ul li a:hover {
+    color: #F8F3E9;
+}
+
+#body #content .content ul li a.more {
+    text-decoration: none;
+    color: #FFAD00;
+}
+
+#body #content .content ul li a.more:hover {
+    text-decoration: none;
+    color: #ff6600;
+}
+
+#body #content .content ul li h2 {
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    margin: 0;
+}
+
+#body #content .content ul li p {
+    font-family: "Myriad Pro";
+    font-size: 14px;
+    text-align: justify;
+    color: #7f7154;
+    margin: 0;
+}
+
+#body #content .content ul li p a {
+    color: #FF9E01;
+}
+
+#body #content .content ul li p a:hover {
+    color: #7f7154;
+}
+
+#body #content .content ul li img {
+    border: 0;
+    float: left;
+    margin-right: 10px;
+}
+
+/**--------- Start of Blog Page Style **/
+#body #content .content ul.articles {
+    list-tyle-type: none;
+    margin: 80px 25px 0 0;
+    padding: 0;
+    background-image: none;
+    width: 640px;
+}
+
+#body #content .content ul.articles li {
+    padding: 0;
+    clear: both;
+    width: 640px;
+}
+
+#body #content .content ul.articles li {
+    background: url("../images/bg-blog-bottom-curve.gif");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+
+#body #content .content ul.articles li div {
+    height: 98px;
+    line-height: 78px;
+    background: url("../images/bg-blog-heading.gif");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#body #content .content ul.articles li p {
+    background: url("../images/bg-blog-content.gif");
+    background-position: left;
+    background-repeat: repeat-y;
+    margin: -10px 0 8px 0;
+    padding: 0 10px 0 48px;
+    font-family: "Myriad Pro";
+    font-size: 14px;
+}
+
+#body #content .content ul.articles li p a {
+    color: #FF9D13;
+}
+
+#body #content .content ul.articles li p a:hover {
+    color: #7F7154;
+}
+
+#body #content .content ul.articles li div span {
+    float: left;
+    width: 110px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Myriad Pro";
+    font-size: 18px;
+}
+
+#body #content .content ul.articles li div h2 {
+    float: left;
+    width: 450px;
+    color: #FF9D13;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+#body #content .content div a.old {
+    background: url("../images/top-border-short.gif");
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 118px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    position: relative;
+    left: 400px;
+    margin-bottom: 50px;
+    color: #7F7154;
+    text-decoration: none;
+    font-family: "Myriad pro";
+    margin-top: 25px;
+}
+
+#body #content .content div a.new {
+    background: url("../images/top-border-short.gif");
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 118px;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    left: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    color: #7F7154;
+    text-decoration: none;
+    font-family: "Myriad pro";
+}
+
+#body #content .content div a.old:hover {
+    color: #000000;
+}
+
+#body #content .content div a.new:hover {
+    color: #000000;
+}
+
+#body #content .content ul.articles li a.heart {
+    background: url("../images/icons.gif");
+    background-position: 5px -374px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: 25px;
+    /*
+          *margin-top:0px;
+          */
+}
+
+#body #content .content ul.articles li a.facebook {
+    background: url("../images/icons.gif");
+    background-position: 0 -124px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /*
+           *margin-top:0px;
+           */
+
+}
+
+#body #content .content ul.articles li a.twitter {
+    background: url("../images/icons.gif");
+    background-position: 0 -534px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /*
+           *margin-top:0px;
+           */
+}
+
+/**--------- End of Blog Page Style **/
+.services-group button {
+    background-color: lightblue;
+    border: lightskyblue;
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: none; /* Float the buttons side by side */
+    margin: 10px;
+    font-size: 24px;
+    position: relative;
+    left: 20%;
+}
+
+/* Clear floats (clearfix hack) */
+.services-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.services-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.services-group button:hover {
+    background-color: DarkOrange;
+}
+
+
+/**------------ Start of About page style  -------------**/
+
+.About {
+    width: 640px;
+    height: auto;
+    overflow: hidden;
+    background: skyblue;
+    width: 100%;
+    color: white;
+}
+
+.About h1 {
+    margin: 50px 0 0 30px;
+    font-family: "Myriad Pro";
+}
+
+.About p {
+    margin: 50px;
+    font-family: "Myriad Pro";
+}
+
+.About ul {
+    margin: 50px;
+    padding: 0;
+    list-style-type: square;;
+}
+
+.About ul li {
+    clear: both;
+    width: 600px;
+    margin-left: 80px;
+    padding: 20px 10px 0 30px;
+
+}
+
+.About ul li h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+
+
+/**------------ End of About page style  -------------**/
+
+/**---------------- Start for Contact Page Style ------------------**/
+
+#body #content .content div p {
+    margin: 10px 0 0 30px;
+    padding: 0 15px 0 0;
+    font-family: "Myriad Pro";
+    font-size: 14px;
+    line-height: 25px;
+    color: #7F7154;
+}
+
+#body #content .content div p a {
+    color: #FF9E01;
+}
+
+#body #content .content div p a:hover {
+    color: #7F7154;
+}
+
+#body #content .content ul.connect {
+    font-family: "Myriad Pro";
+    margin: 50px 0 0 30px;
+}
+
+#body #content .content ul.connect li {
+    width: 640px;
+    width: 400px;
+    margin-top: 20px;
+}
+
+#body #content .content ul.connect li h2 {
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+#body #content .content ul.connect li span {
+    display: block;
+}
+
+#body #content .content ul.connect li span a {
+    color: #FF9E01;
+}
+
+#body #content .content ul.connect li span a:hover {
+    color: #7F7154;
+}
+
+/**---------------- End for Contact Page Style ------------------**/
+
+/**---------------- Start for Pet guide Page Style ------------------**/
+
+#body #content .content ul.section {
+    margin: 80px 0 0 30px;
+    list-style-type: none;
+    width: 580px;
+    overflow: hidden;
+    height: auto;
+}
+
+#body #content .content ul.section li {
+    width: 240px;
+    margin: 0 50px 10px 0;
+    padding: 0;
+    float: left;
+    height: 250px;
+}
+
+#body #content .content ul.section li h2 {
+    background-color: #ff9d13;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-family: "Myriad Pro";
+    color: #ffffff;
+    font-weight: normal;
+}
+
+#body #content .content .paging {
+    margin: 0 0 20px 40px;
+    background: url("../images/border-dotted.gif");
+    background-position: top;
+    background-repeat: repeat-x;
+    width: 480px;
+    height: 80px;
+}
+
+#body #content .content .paging a {
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Myriad Pro";
+    color: #ffffff;
+    text-align: center;
+    background: url("../images/buttons.gif");
+    background-position: 0 -90px;
+    background-repeat: repeat-x;
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin: 20px 5px 20px 5px;
+    line-height: 40px;
+}
+
+#body #content .content .paging a:hover {
+    color: #000000;
+}
+
+#body #content .content .paging a.active {
+    background: url("../images/buttons.gif");
+    background-position: 0 0;
+    background-repeat: repeat-x;
+}
+
+#body #content .content .paging a.next {
+    background: url("../images/buttons.gif");
+    background-position: 0 -180px;
+    background-repeat: repeat-x;
+    height: 40px;
+    width: 100px;
+}
+
+/**---------------- End for Pet guide Page Style ------------------**/
+
+
+
+/**---- Start of sidebar featured style----**/
+#body #content #sidebar .featured {
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+#body #content #sidebar .featured ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#body #content #sidebar .featured h2 {
+    font-family: "Myriad Pro";
+    font-size: 28px;
+    color: #000000;
+    font-weight: normal;
+    margin: 60px 0 0 0;
+}
+
+#body #content #sidebar .featured ul li {
+    clear: both;
+    width: 300px;
+    height: 170px;
+    margin: 10px 0;
+    background: url("../images/shadow.gif");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    overflow: visible;
+}
+
+#body #content #sidebar .featured ul li h2 {
+    margin: 0 0 -10px 0;
+    padding: 0;
+}
+
+#body #content #sidebar .featured ul li h2 a {
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+
+#body #content #sidebar .featured ul li h2 a:hover {
+    color: #7F7154;
+}
+
+#body #content #sidebar .featured ul li img {
+    border: 0;
+    float: left;
+}
+
+#body #content #sidebar .featured ul li a {
+    text-decoration: none;
+}
+
+#body #content #sidebar .featured ul li p {
+    color: #7F7154;
+    font-family: "Myriad Pro";
+    font-size: 14px;
+    line-height: 25px;
+}
+
+#body #content #sidebar .featured ul li p a {
+    color: #000000;
+}
+
+#body #content #sidebar .featured ul li p a:hover {
+    color: #7F7154;
+}
+
+#body #content #sidebar .featured ul li.last {
+    background-image: none;
+}
+
+#body #content #sidebar .featured ul li p a.more {
+    color: #FF9506;
+}
+
+#body #content #sidebar .featured ul li p a.more:hover {
+    color: #7F7154;
+}
+
+/**---------------- Start of sidebar connect style ------------------**/
+
+#body #content #sidebar .connect {
+    width: 300px;
+}
+
+#body #content #sidebar .connect h2 {
+    color: #ff9e01;
+    font-family: "Myriad Pro";
+    font-size: 28px;
+    font-style: Italic;
+    margin: 80px 0 0 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+#body #content #sidebar .connect ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+#body #content #sidebar .connect ul li {
+    clear: both;
+    height: 70px;
+    background: url("../images/top-border-short.gif");
+    background-repeat: no-repeat;
+    background-position: 10px bottom;
+}
+
+#body #content #sidebar .connect ul li a {
+    text-decoration: none;
+    display: block;
+    line-height: 70px;
+    padding-left: 70px;
+    color: #93898a;
+}
+
+#body #content #sidebar .connect ul li a.facebook {
+    background: url("../images/icons.gif");
+    background-position: 0 -174px;
+    background-repeat: no-repeat;
+}
+
+#body #content #sidebar .connect ul li a.facebook:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+#body #content #sidebar .connect ul li a.subscribe {
+    background: url("../images/icons.gif");
+    background-position: 0 -428px;
+    background-repeat: no-repeat;
+}
+
+#body #content #sidebar .connect ul li a.subscribe:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+#body #content #sidebar .connect ul li a.twitter {
+    background: url("../images/icons.gif");
+    background-repeat: no-repeat;
+    background-position: 0 -588px;
+}
+
+#body #content #sidebar .connect ul li a.twitter:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+#body #content #sidebar .connect ul li a.flicker {
+    background: url("../images/icons.gif");
+    background-repeat: no-repeat;
+    background-position: 0 -268px;
+}
+
+#body #content #sidebar .connect ul li a.flicker:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+/**------------------------ End of sidebar style  ----------------------**/
+
+/**----------- Start of featured Style -------------**/
+#body .featured {
+    background-color: lightblue;
+    height: 90px;
+    padding: 20px 0;
+    background-image: none;
+    overflow: hidden;
+}
+
+#body .featured ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 960px;
+    list-style-type: none;
+}
+
+#body .featured ul li {
+    float: left;
+    margin-right: 30px;
+    height: 90px;
+}
+
+#body .featured ul li.last {
+    margin-right: 0;
+}
+
+#body .featured ul li a {
+    text-decoration: none;
+}
+
+#body .featured ul li a {
+    text-decoration: none;
+}
+
+#body .featured ul li a img {
+    border: 0;
+}
+
+/**--------------- Start of footer style ------------------**/
+#footer {
+    background-color: #ff9e01;
+    background-image: none;
+    color: white;
+}
+
+#footer .section {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#footer .section ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#footer .section ul li {
+    float: left;
+    width: 240px;
+    height: 190px;
+}
+
+#footer .section ul li img {
+    position: absolute;
+    top: 0;
+}
+
+#footer .section ul li h2 {
+    position: relative;
+    top: 60px;
+    left: 0;
+    z-index: 10;
+    padding: 0 10px 0 15px;
+    margin: 20px 0 -15px 0;
+    /*
+          *margin:30px 0 -20px 0;
+          */
+
+}
+
+#footer .section ul li h2 a {
+    font-family: "Myriad Pro", Arial;
+    font-size: 16px;
+    color: #bffb05;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+#footer .section ul li p {
+    position: relative;
+    top: 60px;
+    padding: 0 10px 0 15px;
+    z-index: 10;
+    font-family: "Myriad Pro";
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 20px;
+}
+
+#footer .section ul li p a {
+    color: #ffffff;
+}
+
+#footer .section ul li p a:hover {
+    color: #ff6700;
+}
+
+#footer .section ul li p a.more {
+    color: #ff6700;
+}
+
+#footer .section ul li p a.more:hover {
+    color: #ffffff;
+}
+
+#footer #footnote {
+    background-color: #ffad00;
+}
+
+#footer #footnote .section {
+    width: 960px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Myriad Pro";
+    font-size: 13px;
+}
+
+#footer #footnote .section a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#footer #footnote .section a:hover {
+    color: #ffffff;
+}

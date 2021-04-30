@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking Service</title>
+    <script defer src="booking.js"></script>
+    <link href="css/booking.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" id="logo"><img src="images/brandname.png" width="310" height="100" alt=""></a>
+    <a href="contact.html">Contact Us</a>
+    <a href="about.html" class="active" >About</a>
+    <a href="blog.html">Blog</a>
+    <div class="dropdown">
+        <button class="servicedropbtn">Service
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="petdaycare.html">Pet Daycare</a>
+            <a href="petboarding.html">Pet Boarding</a>
+            <a href="petspa.html">Pet Spa</a>
+            <a href="in-homeservices.html">In-Home Services</a>
+            <a href="playparkrental.html">Playpark Rental</a>
+            <a href="petlaundry.html">Pet Laundry</a>
+        </div>
+    </div>
+    <a href="petmart.html">Pet Mart</a>
+    <a href="index.html">Home</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div id="error"></div>
+<div id="body">
+    <form id="form" action="comfirm.html">
+    <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+        <label for="email">E-mail address:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phone">Enter your phone number:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" required><br>
+        <label for="address">Home Address:</label><br>
+        <input type="text" id="address" name="address" required><br>
+        <input type="checkbox" id="petdaycare" name="petdaycare" value="Pet Daycare">
+        <label for="petdaycare"> Pet Daycare</label><br>
+        <input type="checkbox" id="petboarding" name="petboarding" value="Pet Boarding">
+        <label for="petboarding"> Pet Boarding</label><br>
+        <input type="checkbox" id="petspa" name="petspa" value="Pet Spa">
+        <label for="petspa"> Pet Spa</label><br>
+        <input type="checkbox" id="in-homeservices" name="in-homeservices" value="In-Home Services">
+        <label for="in-homeservices"> In-Home Services</label><br>
+        <input type="checkbox" id="playparkrental" name="playparkrental" value="Playpark Rental">
+        <label for="playparkrental"> Playpark Rental</label><br>
+        <input type="checkbox" id="petlaundry" name="petlaundry" value="Pet Laundry">
+        <label for="petlaundry"> Pet Laundry</label><br>
+        <input onclick="handleSubmit()" type="submit" value="Submit">
+    </form>
+
+</div>
+<div id="footer">
+    <div class="section">
+        <h1>Contact US</h1>
+        <p>Sign up here to receive the latest updates, news and information from District Dogs!</p>
+        <form action="">
+            <label for="Email">Email:</label><br>
+            <input type="text" id="youremail" name="email"><br>
+            <input onclick="Received()" type="submit" value="Submit"style="background-color: lightblue">
+        </form>
+    </div>
+    <div id="footnote">
+        <div class="section">Copyright &copy; 2021 K&M Pet Service All rights reserved</div>
+    </div>
+</div>
+<script>
+    function Received(){
+        window.alert("We will contact you as soon as possible!");
+    }
+    var l1 = document.getElementById("petdaycare");
+    var l2 = document.getElementById("petboarding");
+    var l3 = document.getElementById("petspa");
+    var l4 = document.getElementById("in-homeservices");
+    var l5 = document.getElementById("playparkrental");
+    var l6 = document.getElementById("petlaundry");
+
+    function handleSubmit(){
+        var serviceselected;
+        var fname = document.getElementById('fname').value;
+        var lname = document.getElementById('lname').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone').value;
+        var address = document.getElementById('address').value;
+        serviceselected=getCheckboxValue();
+        localStorage.setItem("FNAME",fname);
+        localStorage.setItem("LNAME",lname);
+        localStorage.setItem("EMAIL",email);
+        localStorage.setItem("PHONE",phone)
+        localStorage.setItem("ADDRESS",address);
+        localStorage.setItem("SERVICE",serviceselected);
+        return false;
+    }
+
+    function getCheckboxValue() {
+
+        var res=" ";
+        if (l1.checked == true){
+            var pl1 = document.getElementById("check1").value;
+            res = pl1 + ",";
+        }
+        else if (l2.checked == true){
+            var pl2 = document.getElementById("check2").value;
+            resres = res + pl2 + ",";
+        }
+        else if (l3.checked == true){
+            document.write(res);
+            var pl3 = document.getElementById("check3").value;
+            resres = res + pl3 + ",";
+        }
+        else if (l4.checked == true){
+            var pl4 = document.getElementById("check4").value;
+            resres = res + pl4 + ",";
+        }
+        else if (l5.checked == true){
+            var pl5 = document.getElementById("check5").value;
+            resres = res + pl5 + ",";
+        }
+        else if (l6.checked == true){
+            var pl6 = document.getElementById("check6").value;
+            resres = res + pl6;
+        } else {
+            return message.push("You have not selected anything");
+        }
+
+        return "You have selected " + res + " service.";
+    }
+
+
+</script>
+</body>
+
+</html>

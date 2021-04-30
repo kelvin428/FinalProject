@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pet Shop</title>
+    <meta charset="iso-8859-1">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!--[if IE 6]>
+    <link href="css/ie6.css" rel="stylesheet" type="text/css"><![endif]-->
+    <!--[if IE 7]>
+    <link href="css/ie7.css" rel="stylesheet" type="text/css"><![endif]-->
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" id="logo"><img src="images/brandname.png" width="310" height="100" alt=""></a>
+    <a href="contact.html">Contact Us</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <div class="dropdown">
+        <button class="servicedropbtn">Service
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="petdaycare.html">Pet Daycare</a>
+            <a href="petboarding.html">Pet Boarding</a>
+            <a href="petspa.html">Pet Spa</a>
+            <a href="in-homeservices.html">In-Home Services</a>
+            <a href="playparkrental.html">Playpark Rental</a>
+            <a href="petlaundry.html">Pet Laundry</a>
+        </div>
+    </div>
+    <a href="petmart.html">Pet Mart</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div id="body">
+    <div class="banner">&nbsp;</div>
+    <div id="content">
+        <div class="content">
+
+            <ul>
+                <h1>Service Can Trust!</h1>
+                <li><a href="#"><img src="images/puppy.jpg" width="114" height="160" alt=""></a>
+                    <h2>Safety</h2>
+                    <p>From the moment your dog enters one of our dog daycare facilities, they are in a fully supervised
+                        environment. Each of our playrooms is staffed by our team of trained attendants and all play
+                        areas are cleaned throughout the day.</p>
+                </li>
+                <li><a href="#"><img src="images/cat.jpg" width="114" height="160" alt=""></a>
+                    <h2>Fun Play Yards</h2>
+                    <p>Our playrooms are the stuff (dog) dreams are made of. From play structures that provide hours of
+                        entertainment to Kuranda® beds for superior naptime, District Dogs will quickly become your
+                        pup?s favorite home-away-from-home.</p>
+                </li>
+                <li><a href="#"><img src="images/koi.jpg" width="114" height="160" alt=""></a>
+                    <h2>Pet Cams</h2>
+                    <p>Don?t want to be left out of the fun? Each of our play areas is equipped with a live HD webcam so
+                        you can view your pup?s playtime.</p>
+                </li>
+                <li><a href="#"><img src="images/bird.jpg" width="114" height="160" alt=""></a>
+                    <h2>24/7 Care</h2>
+                    <p>District Dogs daycare staff are on premises 24 hours a day, 365 days a year to provide
+                        round-the-clock loving care. Our trained attendants and dog walkers are committed to providing a
+                        fun and healthy experience.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="featured">
+        <div class="services-group">
+            <button href="petdaycare.html">Pet Daycare</button>
+            <button href="petboarding.html">Pet Boarding</button>
+            <button href="petspa.html">Pet Grooming</button>
+            <button href="in-homeservices.html">Pet walking</button>
+        </div>
+
+    </div>
+    <div class="About">
+        <h1>Why K&M Pet Service?</h1>
+        <p>We believe finding a reliable, professional pet sitter should be easy. So we make sure every member of the
+            Fetch Family is a highly-experienced animal lover with a passion for petting and playing.</p>
+        <ul>
+            <h2>All of our pet sitters and dog walkers:</h2>
+            <li>Pass a mandatory background check</li>
+            <li>Go through an in-depth interview</li>
+            <li>Provide all necessary personal information</li>
+        </ul>
+    </div>
+</div>
+<div id="footer">
+    <div class="section">
+        <h1>Contact US</h1>
+        <p>Sign up here to receive the latest updates, news and information from District Dogs!</p>
+        <form action="">
+            <label for="Email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <input onclick="Received()" type="submit" value="Submit"style="background-color: lightblue">
+        </form>
+    </div>
+    <div id="footnote">
+        <div class="section">Copyright &copy; 2021 K&M Pet Service All rights reserved</div>
+    </div>
+</div>
+<script>
+    function Received(){
+        window.alert("We will contact you as soon as possible!");
+    }
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (e) {
+        if (!e.target.matches('.servicedropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+            }
+        }
+    }
+</script>
+</body>
+</html>

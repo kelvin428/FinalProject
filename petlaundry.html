@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Laundry</title>
+    <link href="css/servicestyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" id="logo"><img src="images/brandname.png" width="310" height="100" alt=""></a>
+    <a href="contact.html">Contact Us</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <div class="dropdown">
+        <button class="servicedropbtn" class="active">Service
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="petdaycare.html">Pet Daycare</a>
+            <a href="petboarding.html">Pet Boarding</a>
+            <a href="petspa.html">Pet Spa</a>
+            <a href="in-homeservices.html">In-Home Services</a>
+            <a href="playparkrental.html">Playpark Rental</a>
+            <a href="petlaundry.html">Pet Laundry</a>
+        </div>
+    </div>
+    <a href="petmart.html">Pet Mart</a>
+    <a href="index.html">Home</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div id="body">
+    <h1>Pet Laundry</h1>
+    <ul>
+        <li>
+            <h2>
+                Pet Laundry Without The Headache
+            </h2>
+            <p>
+                Stop cleaning pet hair out of your home dryer’s lint trap! You want your pet to enjoy clean, fresh
+                bedding—let our commercial washer and dryer do the cleaning for you. Our pet laundry service is
+                available as an add-on to your pet’s daycare reservation. Simply drop off the items you want washed when
+                your pet checks in for daycare and pick up freshly washed toys, bedding, and blankets at the end of the
+                day.</li>
+        <li>
+            <h2>
+                What We Can Accept for Washing
+            </h2>
+            <p>
+                Any items that can fit in our commercial washer and dryer are accepted for laundering at our daycare
+                locations. These include:</p>
+
+            <ul>
+                <li>Towels and blankets;</li>
+                <li>Machine-washable soft toys;</li>
+                <li>Small pet beds or bed covers</li>
+            </ul>
+            <p>
+            If you have a specific item in mind but don’t see it listed; contact us and we’ll let you know if we can
+            clean it for you.
+            </p>
+        </li>
+        <li>
+            <h2>How Pet Laundry Works</h2>
+            <p>
+                We are only able to accept items as an add-on request for daycare reservations; this service is not
+                available with boarding reservations at this time. Additionally:</p>
+            <ul>
+                <li>
+                    Laundry items must be picked up and dropped off on the same day.
+                </li>
+                <li>
+                    Please bring all items in a bag that is clearly marked with your pet’s name.
+                </li>
+                <li>
+                    Laundry service may be requested through the daycare reservation software or our front desk
+                    attendant can add it at check-in.
+
+                </li>
+            </ul>
+
+
+        </li>
+
+    </ul>
+    <h1>Find your nearest K&M Pet Service and Register Today!</h1>
+    <form action="Booking.html">
+        <input id="book" type="submit" value="Click Here"/>
+    </form>
+</div>
+<div id="footer">
+    <div class="section">
+        <h1>Contact US</h1>
+        <p>Sign up here to receive the latest updates, news and information from K&M Pet Service!</p>
+        <form action="">
+            <label for="Email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <input onclick="Received()" type="submit" value="Submit" style="background-color: lightblue">
+        </form>
+    </div>
+    <div id="footnote">
+        <div class="section">Copyright &copy; 2021 K&M Pet Service All rights reserved</div>
+    </div>
+</div>
+</body>
+<script>
+    function Received(){
+        window.alert("We will contact you as soon as possible!");
+    }
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</html>

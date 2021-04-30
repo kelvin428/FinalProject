@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pet Shop | Blog</title>
+    <meta charset="iso-8859-1">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!--[if IE 6]>
+    <link href="css/ie6.css" rel="stylesheet" type="text/css"><![endif]-->
+    <!--[if IE 7]>
+    <link href="css/ie7.css" rel="stylesheet" type="text/css"><![endif]-->
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" id="logo"><img src="images/brandname.png" width="310" height="100" alt=""></a>
+    <a href="contact.html">Contact Us</a>
+    <a href="about.html">About</a>
+    <a href="blog.html"class="active">Blog</a>
+    <div class="dropdown">
+        <button class="servicedropbtn">Service
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="petdaycare.html">Pet Daycare</a>
+            <a href="petboarding.html">Pet Boarding</a>
+            <a href="petspa.html">Pet Spa</a>
+            <a href="in-homeservices.html">In-Home Services</a>
+            <a href="playparkrental.html">Playpark Rental</a>
+            <a href="petlaundry.html">Pet Laundry</a>
+        </div>
+    </div>
+    <a href="petmart.html">Pet Mart</a>
+    <a href="index.html" >Home</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div id="body">
+    <div id="content">
+        <div class="content">
+            <ul class="articles">
+                <li>
+                    <div><span>Dec 20 </span>
+                        <h2>  My puppy has much better behaved</h2>
+                        <a class="heart" href="#">&nbsp;</a> <a class="twitter" href="#">&nbsp;</a> <a class="facebook"
+                                                                                                       href="#">&nbsp;</a>
+                    </div>
+                    <p>
+                        Since joining K&M's dog training classes over the summer, my dog (Sunny) has improved his concentration! He is very obedient to his owner's instructions. K&M's dog training classes are not expensive, and there is a special discount of 20% for new members! In addition, if you become a member, you can also get two free baths for your dog. Where to find such a service, the most important thing is to give the family puppy well-trained and obedient. And in the dog training period, although you can not look at the puppy, the whole process can still watch the training! This can eliminate the consumer's concerns about the trainer.
+                    </p>
+                </li>
+                <li>
+                    <div><span>Nov 12</span>
+                        <h2>Bauer's appearance is genuinely nice</h2>
+                        <a class="heart" href="#">&nbsp;</a> <a class="twitter" href="#">&nbsp;</a> <a class="facebook"
+                                                                                                       href="#">&nbsp;</a>
+                    </div>
+                    <p> A few days ago, went to the K&M dog grooming service; the price is not high, there is a free shuttle service for dogs, convenient for those who live relatively remote. For the grooming service, I was worried that the service would not be suitable for my dog (Bauer) or that the staff would use illegal means to carry out the service, but K&M's grooming service, the whole process will be recorded! K&M's service is excellent, and they will show us the records when they return the dog afterward. K&M's groomers create a different image for my Bauer every time, sometimes cute and sometimes noble. My dog's coat was not so good before, but through K&M's grooming service, Bauer's coat is much softer! I will continue to patronize K&M! </p>
+                </li>
+                <li>
+                    <div><span>Oct 7</span>
+                        <h2>Kit's hair texture is much improved</h2>
+                        <a class="heart" href="#">&nbsp;</a> <a class="twitter" href="#">&nbsp;</a> <a class="facebook"
+                                                                                                       href="#">&nbsp;</a>
+                    </div>
+                    <p> I have used the service at various pet stores before, but Kit's coat is still not good. My dog had a minor skin condition and was scratching a lot, but I couldn't find one with the right price and could solve Kit's problem. Kit's coat has not only improved, but most importantly, his skin is no longer itchy or red! Although at first, the store staff said that using technical shampoos would be more expensive, it could solve Kit's skin problems in three treatments with a doctor's diagnosis and the cooperation of a pharmacist. It seems that K&M did not disappoint me! </p>
+                </li>
+            </ul>
+            <div><a class="new" href="#">New Post</a> <a class="old" href="#">Old Post</a></div>
+        </div>
+    </div>
+    <div class="featured">
+        <ul>
+            <li><a href="#"><img src="images/organic-and-chemical-free.jpg" width="300" height="90" alt=""></a></li>
+            <li><a href="#"><img src="images/good-food.jpg" width="300" height="90" alt=""></a></li>
+            <li class="last"><a href="#"><img src="images/pet-grooming.jpg" width="300" height="90" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+<div id="footer">
+    <div class="section">
+        <h1>Contact US</h1>
+        <p>Sign up here to receive the latest updates, news and information from District Dogs!</p>
+        <form action="">
+            <label for="Email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <input onclick="Received()" type="submit" value="Submit" style="background-color: lightblue">
+        </form>
+    </div>
+    <div id="footnote">
+        <div class="section">Copyright &copy; 2021 K&M Pet Service All rights reserved</div>
+    </div>
+</div>
+</body>
+<script>
+    function Received() {
+        window.alert("We will contact you as soon as possible!");
+    }
+</script>
+</html>
