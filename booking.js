@@ -19,6 +19,7 @@ form.addEventListener('submit',(e)=>{
             errorElement.innerText=message.join(',');
             message = [];
         }
+            window.alert('Booked! Thank you!')
 
 
 })
